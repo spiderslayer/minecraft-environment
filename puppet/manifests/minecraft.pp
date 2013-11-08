@@ -17,12 +17,21 @@ minecraft::op { "byron358": }
 
 # List the whitelisted players
 minecraft::whitelist { "flaryo": }
-
+minecraft::whitelist { "Riley_Johsnson": }
+minecraft::whitelist { "ty2tori": }
+minecraft::whitelist { "giobovo0700": }
+minecraft::whitelist { "Garbanzo_Bean": }
+minecraft::whitelist { "WWE_FAN_BRUNO": }
+minecraft::whitelist { "cfujtysdr": }
 # Define any server properties (e.g. message of the day)
 # desired for the Minecraft server
 minecraft::server_prop { 'motd':
   value => "Welcome to the Minecraft Server",
-}
+}minecraft::server_prop { 'enable-command-block': value => 'true'}
+minecraft::server_prop { 'max-players':value => '9'}
+minecraft::server_prop { 'pvp':
+  value => 'false'}minecraft::server_prop { 'white-list':value => 'true'}
+
 
 # This message of the day file is seen when ssh-ing
 # in to the Minecraft server.

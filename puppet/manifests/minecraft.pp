@@ -23,7 +23,7 @@ minecraft::op { "byron358": }
 minecraft::op { "ultimatetide": }
 # List the whitelisted players
 minecraft::whitelist { "flaryo": }
-minecraft::whitelist { "Riley_Johsnson": }
+minecraft::whitelist { "Riley_Johnson": }
 minecraft::whitelist { "ty2tori": }
 minecraft::whitelist { "giobovo0700": }
 minecraft::whitelist { "Garbanzo_Bean": }

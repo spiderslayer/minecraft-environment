@@ -16,7 +16,9 @@ exec { "apt-update":
 Exec["apt-update"] -> Package <| |>
 
 # Instantiate the 'minecraft' class to do our basic server setup
-class { 'minecraft': }
+class { 'minecraft':
+  heap_size => 1024,
+}
 
 # Declare the operator (or operators)
 minecraft::op { "byron358": }

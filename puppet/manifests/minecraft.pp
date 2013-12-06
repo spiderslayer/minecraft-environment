@@ -27,7 +27,6 @@ minecraft::whitelist { "Riley_Johnson": }
 minecraft::whitelist { "ty2tori": }
 minecraft::whitelist { "giobovo0700": }
 minecraft::whitelist { "Garbanzo_Bean": }
-minecraft::whitelist { "WWE_FAN_BRUNO": }
 minecraft::whitelist { "hitzcreepers": }
 # Define any server properties (e.g. message of the day)
 # desired for the Minecraft server

@@ -74,7 +74,20 @@ mc_stop() {
                 echo "$SERVICE could not be shut down... still running."
         else
                 echo "$SERVICE is shut down."
+				mc_backup
         fi
+}
+
+mc_backup() {
+	cd /opt/minecraft/world/
+	msg="Daily backup"
+	if [ ! -d .git ]
+	then
+		sudo -u mcserver USER=mcserver HOME=/opt/minecraft git init
+		msg="Initial commit"
+	fi
+	sudo -u mcserver USER=mcserver HOME=/opt/minecraft git add .
+	sudo -u mcserver USER=mcserver HOME=/opt/minecraft git commit -m "$msg"
 }
 
 #Start-Stop here

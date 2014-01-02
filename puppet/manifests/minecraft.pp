@@ -45,3 +45,10 @@ minecraft::server_prop { 'white-list':value => 'true'}
 file { '/etc/motd':
   content => "Welcome to the Minecraft Server shell.\n"
 }
+
+cron { minecraft:
+	command => "/etc/init.d/minecraft restart",
+	user => root,
+	hour => 12
+}
+

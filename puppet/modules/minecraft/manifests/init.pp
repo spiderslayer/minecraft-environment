@@ -52,6 +52,9 @@ class minecraft(
     }
   }
 
+  package {'git':
+  }
+
   group { $group:
     ensure => present,
   }
@@ -65,6 +68,17 @@ class minecraft(
   s3file { "${homedir}/minecraft_server.jar":
     source  => "Minecraft.Download/versions/$version/minecraft_server.$version.jar",
     require => User[$user],
+  }
+
+  file { "${homedir}/.gitconfig":
+    ensure => present,
+    owner  => $user,
+    group  => $group,
+    mode   => '0664',
+    require => User[$user],
+    content => "[user]
+	  email = $user@localhost
+	  name = Minecraft server"
   }
 
   file { "${homedir}/ops.txt":

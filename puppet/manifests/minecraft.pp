@@ -38,6 +38,8 @@ minecraft::server_prop { 'enable-command-block': value => 'true'}
 minecraft::server_prop { 'max-players':value => '9'}
 minecraft::server_prop { 'pvp':  value => 'false'}
 minecraft::server_prop { 'white-list':value => 'true'}
+minecraft::server_prop { 'difficulty':value => '2'}
+minecraft::server_prop { 'level-name':value => 'byrons serever'}
 
 
 # This message of the day file is seen when ssh-ing

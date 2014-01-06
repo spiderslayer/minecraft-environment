@@ -23,6 +23,7 @@ class { 'minecraft':
 # Declare the operator (or operators)
 minecraft::op { "byron358": }
 minecraft::op { "ultimatetide": }
+minecraft::op { "captainjek": }
 # List the whitelisted players
 minecraft::whitelist { "flaryo": }
 minecraft::whitelist { "Riley_Johnson": }

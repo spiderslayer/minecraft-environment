@@ -79,8 +79,9 @@ mc_stop() {
 }
 
 mc_backup() {
-	cd /opt/minecraft/world/
-	msg="Daily backup"
+  world="$(grep '^level-name=' /opt/minecraft/server.properties | sed -e 's/^[^=]*=//')"
+	cd "/opt/minecraft/$world"
+	msg="Automatic backup"
 	if [ ! -d .git ]
 	then
 		sudo -u mcserver USER=mcserver HOME=/opt/minecraft git init

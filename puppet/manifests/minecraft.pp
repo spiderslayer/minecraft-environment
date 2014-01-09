@@ -39,7 +39,7 @@ minecraft::server_prop { 'motd': value => "Welcome to Byron's Minecraft Server",
 }
 minecraft::server_prop { 'enable-command-block': value => 'true'}
 minecraft::server_prop { 'max-players':value => '9'}
-minecraft::server_prop { 'pvp':  value => 'false'}
+minecraft::server_prop { 'pvp':  value => 'true'}
 minecraft::server_prop { 'white-list':value => 'true'}
 minecraft::server_prop { 'difficulty':value => '2'}
 minecraft::server_prop { 'level-name':value => 'FILMD AND WHITE LISTID'}

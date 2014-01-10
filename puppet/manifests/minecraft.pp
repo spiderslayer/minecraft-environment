@@ -24,14 +24,11 @@ class { 'minecraft':
 minecraft::op { "byron358": }
 minecraft::op { "ultimatetide": }
 minecraft::op { "captainjek": }
+minecraft::op { "Garbanzo_Bean": }
+minecraft::op { "hitzcreepers": }
 # List the whitelisted players
-minecraft::whitelist { "flaryo": }
-minecraft::whitelist { "Riley_Johnson": }
 minecraft::whitelist { "ty2tori": }
 minecraft::whitelist { "giobovo0700": }
-minecraft::whitelist { "Garbanzo_Bean": }
-minecraft::whitelist { "hitzcreepers": }
-minecraft::whitelist { "WWE_FAN_BRUNO": }
 
 # Define any server properties (e.g. message of the day)
 # desired for the Minecraft server
@@ -54,6 +51,7 @@ file { '/etc/motd':
 cron { minecraft:
 	command => "/etc/init.d/minecraft restart",
 	user => root,
-	hour => 12
+	hour => 1,
+  minute=>1
 }
 

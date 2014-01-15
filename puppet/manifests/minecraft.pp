@@ -17,7 +17,7 @@ Exec["apt-update"] -> Package <| |>
 
 # Instantiate the 'minecraft' class to do our basic server setup
 class { 'minecraft':
-  heap_size => 1200,
+  heap_size => 1024,
 }
 
 # Declare the operator (or operators)

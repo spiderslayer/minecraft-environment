@@ -26,8 +26,9 @@ minecraft::op { "ultimatetide": }
 minecraft::op { "captainjek": }
 minecraft::op { "Garbanzo_Bean": }
 minecraft::op { "hitzcreepers": }
+minecraft::op { "ty2tori": }
+minecraft::op { "Herobrine1652": }
 # List the whitelisted players
-minecraft::whitelist { "ty2tori": }
 minecraft::whitelist { "giobovo0700": }
 
 # Define any server properties (e.g. message of the day)

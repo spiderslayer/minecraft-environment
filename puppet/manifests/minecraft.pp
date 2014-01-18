@@ -18,18 +18,17 @@ Exec["apt-update"] -> Package <| |>
 # Instantiate the 'minecraft' class to do our basic server setup
 class { 'minecraft':
   heap_size => 1024,
+  heap_start =>512,
 }
 
 # Declare the operator (or operators)
 minecraft::op { "byron358": }
 minecraft::op { "ultimatetide": }
-minecraft::op { "captainjek": }
-minecraft::op { "Garbanzo_Bean": }
-minecraft::op { "hitzcreepers": }
-minecraft::op { "ty2tori": }
-minecraft::op { "Herobrine1652": }
 # List the whitelisted players
-minecraft::whitelist { "giobovo0700": }
+minecraft::whitelist { "captainjek": }
+minecraft::whitelist { "hitzcreepers": }
+minecraft::whitelist { "ty2tori": }
+minecraft::whitelist { "Herobrine1652": }
 
 # Define any server properties (e.g. message of the day)
 # desired for the Minecraft server
@@ -40,7 +39,7 @@ minecraft::server_prop { 'max-players':value => '9'}
 minecraft::server_prop { 'pvp':  value => 'true'}
 minecraft::server_prop { 'white-list':value => 'true'}
 minecraft::server_prop { 'difficulty':value => '2'}
-minecraft::server_prop { 'level-name':value => 'FILMD AND WHITE LISTID'}
+minecraft::server_prop { 'level-name':value => 'INVATION'}
 
 
 # This message of the day file is seen when ssh-ing

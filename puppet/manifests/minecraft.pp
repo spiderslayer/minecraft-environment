@@ -40,6 +40,7 @@ minecraft::server_prop { 'pvp':  value => 'true'}
 minecraft::server_prop { 'white-list':value => 'true'}
 minecraft::server_prop { 'difficulty':value => '2'}
 minecraft::server_prop { 'level-name':value => 'INVATION'}
+minecraft::server_prop { 'gamemode':value => '1'}
 
 
 # This message of the day file is seen when ssh-ing

@@ -38,9 +38,9 @@ minecraft::server_prop { 'enable-command-block': value => 'true'}
 minecraft::server_prop { 'max-players':value => '9'}
 minecraft::server_prop { 'pvp':  value => 'true'}
 minecraft::server_prop { 'white-list':value => 'true'}
-minecraft::server_prop { 'difficulty':value => '2'}
-minecraft::server_prop { 'level-name':value => 'INVATION'}
-minecraft::server_prop { 'gamemode':value => '1'}
+minecraft::server_prop { 'difficulty':value => '1'}
+minecraft::server_prop { 'level-name':value => 'bilding a house'}
+minecraft::server_prop { 'gamemode':value => '0'}
 
 
 # This message of the day file is seen when ssh-ing
